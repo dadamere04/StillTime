@@ -1,0 +1,82 @@
+{
+  "name": "Task",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Name of the task or activity"
+    },
+    "description": {
+      "type": "string",
+      "description": "Additional details about the task"
+    },
+    "duration_minutes": {
+      "type": "number",
+      "description": "How long the task takes in minutes"
+    },
+    "priority": {
+      "type": "string",
+      "enum": [
+        "high",
+        "medium",
+        "low"
+      ],
+      "default": "medium",
+      "description": "Task priority level"
+    },
+    "movability": {
+      "type": "string",
+      "enum": [
+        "fixed",
+        "flexible",
+        "skippable"
+      ],
+      "default": "flexible",
+      "description": "How flexible this task is for rescheduling"
+    },
+    "can_split": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether task can be broken into multiple sessions"
+    },
+    "max_sessions": {
+      "type": "number",
+      "description": "Maximum number of sessions if splittable"
+    },
+    "commute_minutes": {
+      "type": "number",
+      "default": 0,
+      "description": "Travel time needed before task"
+    },
+    "deadline": {
+      "type": "string",
+      "format": "date",
+      "description": "When this needs to be completed by"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "scheduled",
+        "completed"
+      ],
+      "default": "pending"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "work",
+        "personal",
+        "health",
+        "social",
+        "learning",
+        "errands"
+      ],
+      "default": "personal"
+    }
+  },
+  "required": [
+    "title",
+    "duration_minutes"
+  ]
+}

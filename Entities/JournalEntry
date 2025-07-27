@@ -1,0 +1,35 @@
+{
+  "name": "JournalEntry",
+  "type": "object",
+  "properties": {
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date of the journal entry"
+    },
+    "content": {
+      "type": "string",
+      "description": "Journal entry content"
+    },
+    "mood_rating": {
+      "type": "number",
+      "minimum": 1,
+      "maximum": 5,
+      "description": "Mood rating from 1-5"
+    },
+    "gratitude": {
+      "type": "string",
+      "description": "What the user is grateful for"
+    },
+    "productivity_rating": {
+      "type": "number",
+      "minimum": 1,
+      "maximum": 5,
+      "description": "How productive the day felt"
+    }
+  },
+  "required": [
+    "date",
+    "content"
+  ]
+}

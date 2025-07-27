@@ -1,0 +1,63 @@
+{
+  "name": "CalendarEvent",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Event title"
+    },
+    "start_time": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When the event starts"
+    },
+    "end_time": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When the event ends"
+    },
+    "event_type": {
+      "type": "string",
+      "enum": [
+        "task",
+        "meal",
+        "sleep",
+        "break",
+        "routine",
+        "external"
+      ],
+      "default": "external"
+    },
+    "task_id": {
+      "type": "string",
+      "description": "Reference to task if this event is for a task"
+    },
+    "priority": {
+      "type": "string",
+      "enum": [
+        "high",
+        "medium",
+        "low"
+      ],
+      "default": "medium"
+    },
+    "movability": {
+      "type": "string",
+      "enum": [
+        "fixed",
+        "flexible",
+        "skippable"
+      ],
+      "default": "flexible"
+    },
+    "color": {
+      "type": "string",
+      "description": "Display color for the event"
+    }
+  },
+  "required": [
+    "title",
+    "start_time",
+    "end_time"
+  ]
+}

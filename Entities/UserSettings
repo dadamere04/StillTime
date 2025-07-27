@@ -1,0 +1,62 @@
+{
+  "name": "UserSettings",
+  "type": "object",
+  "properties": {
+    "breakfast_time": {
+      "type": "string",
+      "default": "08:00",
+      "description": "Preferred breakfast time"
+    },
+    "breakfast_duration": {
+      "type": "number",
+      "default": 30,
+      "description": "Breakfast duration in minutes"
+    },
+    "lunch_time": {
+      "type": "string",
+      "default": "12:30",
+      "description": "Preferred lunch time"
+    },
+    "lunch_duration": {
+      "type": "number",
+      "default": 30,
+      "description": "Lunch duration in minutes"
+    },
+    "dinner_time": {
+      "type": "string",
+      "default": "18:00",
+      "description": "Preferred dinner time"
+    },
+    "dinner_duration": {
+      "type": "number",
+      "default": 30,
+      "description": "Dinner duration in minutes"
+    },
+    "sleep_time": {
+      "type": "string",
+      "default": "22:00",
+      "description": "Preferred bedtime"
+    },
+    "wake_time": {
+      "type": "string",
+      "default": "06:00",
+      "description": "Preferred wake time"
+    },
+    "mindfulness_enabled": {
+      "type": "boolean",
+      "default": true,
+      "description": "Enable evening mindfulness reminders"
+    },
+    "work_start": {
+      "type": "string",
+      "default": "09:00",
+      "description": "Work day start time"
+    },
+    "work_end": {
+      "type": "string",
+      "default": "17:00",
+      "description": "Work day end time"
+    }
+  },
+  "required": []
+}
