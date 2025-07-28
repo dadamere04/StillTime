@@ -1,3 +1,4 @@
+//Pages/Dashboard.js
 import React, { useState, useEffect } from "react";
 import { Task, CalendarEvent, UserSettings } from "@/entities/all";
 import { format, startOfDay, endOfDay, addDays } from "date-fns";
