@@ -1,4 +1,12 @@
-export { default as Task } from "./Task";
-export { default as CalendarEvent } from "./CalendarEvent";
-export { default as JournalEntry } from "./JournalEntry";
-export { default as UserSettings } from "./UserSettings";
+//entities/all.js
+import Task from "./Task.json";
+export { Task };
+
+import CalendarEvent from "./CalendarEvent.json";
+export { CalendarEvent };
+
+import JournalEntry from "./JournalEntry.json";
+export { JournalEntry };
+
+import UserSettings from "./UserSettings.json";
+export { UserSettings };
